@@ -1,0 +1,424 @@
+.container {
+    color: #222222;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  h2 {
+    font-family: "League Gothic", sans-serif;
+    line-height: 110px;
+    margin: 5px;
+    padding: 10px;
+    font-size: 128px;
+    font-weight: 300;
+  }
+  
+  p,
+  h3,
+  span {
+    margin: 5px;
+    padding: 10px;
+    font-family: "League Spartan", sans-serif;
+    line-height: 24px;
+  }
+  
+  h4 {
+    font-family: "League Spartan", sans-serif;
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    padding-left: 15px;
+    padding-right: 5px;
+  }
+  
+  .titles {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .years {
+    font-size: 32px;
+    font-style: italic;
+    vertical-align: middle;
+  }
+  
+  .left-panel {
+    height: 100%;
+    width: 16%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    overflow-x: hidden;
+    padding-top: 30px;
+    transition: 0.5s;
+  }
+  
+  /*
+  .header__logo {
+    position: relative;
+    width: 200px;
+    height: 200px; 
+    overflow: hidden;
+  }
+  
+  .logo {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin-left: 10px;
+    transition: clip-path 0.1s ease;
+  }*/
+  
+  #logo-dark {
+    opacity: 0; /* Initially hide the dark logo */
+  }
+  
+  #about {
+    padding-top: 60px;
+    height: 880px;
+    background-image: url("/assets/images/about-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .about-box {
+    position: relative;
+    justify-content: space-between;
+  }
+  
+  .about-text-1 {
+    position: absolute;
+    padding: 345px 520px 40px 62px;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: left;
+  }
+  
+  .about-text-2 {
+    position: absolute;
+    padding: 0px 540px 40px 62px;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: left;
+  }
+  
+  .accent-bars {
+    width: 74%;
+    height: 50%;
+    padding-left: 15px;
+  }
+  
+  #work {
+    height: fit-content;
+  }
+  
+  #funding {
+    height: 360px;
+  }
+  
+  .mini-section {
+    font-size: 82px;
+    line-height: 76px;
+  }
+  
+  .funding-text {
+    font-size: 24px;
+    line-height: 30px;
+    width: 98%;
+  }
+  
+  #contact {
+    height: 350px;
+  }
+  
+  .main-body {
+    height: 100%;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  .nav-bar {
+    float: right;
+    height: 40px;
+    padding: 25px 50px 0px 0px;
+  }
+  
+  .nav-bar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: #222222;
+    transition: 0.3s;
+    font-family: "League Gothic", sans-serif;
+    font-weight: 300;
+    font-size: 48px;
+  }
+  
+  .section-dark {
+    background-color: #222222;
+    color: white;
+    padding-left: 250px;
+  }
+  
+  .section-light {
+    padding-left: 250px;
+  }
+  
+  .contact {
+    background-color: #222222;
+    color: white;
+  }
+  
+  .ra-bio-content {
+    line-height: 19px;
+  }
+  
+  .faculty-bio {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #222222;
+    border-radius: 30px;
+    margin: 0px 30px 20px 0px;
+    padding: 20px;
+    height: 315px;
+  }
+  
+  .faculty-headshot {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding-top: 5px;
+  }
+  
+  .details {
+    font-size: 25px;
+    vertical-align: middle;
+  }
+  
+  .ra-details {
+    font-size: 18px;
+    line-height: 19px;
+    font-weight: 600;
+  }
+  
+  .ra-title {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+  
+  .ra-headshot {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    padding-right: 10px;
+  }
+  
+  .ra-bios {
+    width: 50%;
+    border: 2px solid #222222;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 0px 20px 20px 0px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .med {
+    height: 315px;
+  }
+  .long {
+    height: 355px;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .right {
+    text-align: right;
+    padding-right: 40px;
+  }
+  
+  .left {
+    text-align: left;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #222222;
+  }
+  
+  a:visited {
+    color: #222222;
+  }
+  
+  #external-icon {
+    color: #222222;
+    font-size: 16px;
+  }
+  
+  .dot {
+    height: 20px;
+    width: 20px;
+    background-color: #F57455;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .names {
+    font-size: 54px;
+    line-height: 50px;
+  }
+  
+  .ra-names {
+    font-size: 36px;
+    line-height: 28px;
+  }
+  
+  .proj-names {
+    font-size: 56px;
+    line-height: 56px;
+  }
+  
+  .subhead {
+    text-align: center;
+    font-size: 56px;
+    font-family: "League Gothic", sans-serif;
+    font-weight: 300;
+  }
+  
+  .contact-info {
+    font-size: 24px;
+  }
+  
+  .project {
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    padding: 20px;
+    padding-bottom: 30px;
+    text-align: left;
+  }
+  
+  .pdf-viewer {
+    text-align: center;
+  }
+  
+  :root {
+    --black: #222222;
+    --white: #fff;
+    --color-1: #222222;
+    --gutter: 2rem;
+    --replace-offset: 100%;
+    --replace-offset-2: calc((100% - var(--replace-offset) ) * -1)
+  }
+  
+  img {
+    vertical-align: bottom;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    min-height: 100vh;
+  }
+  
+  .footer {
+    padding: calc(var(--gutter) * .5);
+    background-color: var(--black);
+    color: var(--white);
+  }
+  
+  .header {
+    position: fixed;
+    top: 14%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    padding: 12px;
+    text-align: center;
+    width: 250px;
+  }
+  
+  .logo {
+    display: inline-block;
+    border-radius: calc(var(--gutter) * .25);
+    font-size: 2em;
+    padding: 10px;
+  }
+  
+  .logo--invert {
+    background-color: var(--black);
+    color: var(--white);
+    border-color: var(--white);
+  }
+  
+  
+  .header__logo {
+    width: fit-content;
+    height: fit-content;
+  }
+  
+  .logo-img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .section--bg {
+    background-color: var(--color-1);
+  }
+  
+  .js-replace {
+    display: grid;
+  }
+  
+  .js-replace__item {
+    grid-row: -1 / 1;
+    grid-column: -1 / 1; 
+    overflow: hidden;
+    will-change: transform;
+  }
+  
+  .js-replace__item {
+    transform: translateY(calc(var(--replace-offset) * 1));  
+  }
+  .js-replace__content {
+    border: 1px solid transparent; 
+    will-change: transform;
+    transform: translateY(calc(var(--replace-offset) * -1));
+  }
+  
+  .js-replace__item--active {
+    transform: translateY(calc(var(--replace-offset-2) * 1));  
+  }
+  .js-replace__item--active .js-replace__content {
+    transform: translateY(calc(var(--replace-offset-2) * -1));  
+  }
+  
+  
+  /* REVERSE ANIMATION */
+  .js-replace--reverse 
+  .js-replace__item {
+    transform: translateY(calc(var(--replace-offset-2) * 1));  
+  }
+  .js-replace--reverse 
+  .js-replace__content {
+    transform: translateY(calc(var(--replace-offset-2) * -1));
+  }
+  
+  /* previous replace item*/
+  .js-replace--reverse 
+  .js-replace__item--active {
+    transform: translateY(calc(var(--replace-offset) * 1));  
+  }
+  .js-replace--reverse 
+  .js-replace__item--active .js-replace__content {
+    transform: translateY(calc(var(--replace-offset) * -1));
+  }
+  

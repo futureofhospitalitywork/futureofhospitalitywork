@@ -15,14 +15,18 @@
 
   button {
     font-family: "League Spartan", sans-serif;
-    padding: 12px;
+    padding: 10px 15px 10px 15px;
     border-radius: 20px;
     border: 3px solid black;
-    box-shadow: 5px 5px 7px rgba(0.3, 0, 0.6, 0); 
-    margin-left: 15px;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0.6, 0.6); 
     font-weight: 400;
     font-size: 20px;
     cursor: pointer;
+  }
+
+  .button-div {
+    width:100%;
+    text-align: center;
   }
 
   p,
@@ -31,7 +35,7 @@
     margin: 5px;
     padding: 10px;
     font-family: "League Spartan", sans-serif;
-    line-height: 24px;
+    line-height: 23px;
   }
   
   h4 {
@@ -186,7 +190,7 @@
   }
   
   .ra-bio-content {
-    line-height: 19px;
+    line-height: 23px;
   }
   
   .faculty-bio {
@@ -195,31 +199,33 @@
     border: 2px solid #222222;
     border-radius: 30px;
     margin: 0px 30px 20px 0px;
-    padding: 20px;
-    height: 360px;
+    padding: 20px 30px 20px 25px;
+    height: 0%;
+    min-height: 300px;
+    font-size: 17px;
+    align-items: center;
   }
   
   .faculty-headshot {
-    width: 310px;
-    height: 310px;
+    width: 280px;
+    height: 280px;
     border-radius: 50%;
     margin-right: 10px;
-    padding-top: 25px;
   }
   
   .details {
-    font-size: 25px;
+    font-size: 22px;
     vertical-align: middle;
   }
   
   .ra-details {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 19px;
     font-weight: 600;
   }
   
   .ra-title {
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 24px;
     vertical-align: middle;
@@ -233,21 +239,14 @@
   }
   
   .ra-bios {
-    width: 50%;
     border: 2px solid #222222;
     border-radius: 30px;
-    padding: 20px;
-    margin: 0px 20px 20px 0px;
+    padding: 20px 30px 30px 25px;
+    margin: 0px 30px 20px 0px;
     display: flex;
     flex-direction: row;
     font-size: 17px;
-  }
-  
-  .med {
-    height: 330px;
-  }
-  .long {
-    height: 385px;
+    align-items: center;
   }
   
   .row {
@@ -288,8 +287,8 @@
   }
   
   .names {
-    font-size: 54px;
-    line-height: 50px;
+    font-size: 45px;
+    line-height: 30px;
   }
   
   .ra-names {

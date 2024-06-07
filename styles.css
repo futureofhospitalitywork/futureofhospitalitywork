@@ -15,8 +15,8 @@
 
   button {
     font-family: "League Spartan", sans-serif;
-    padding: 15px;
-    border-radius: 25px;
+    padding: 12px;
+    border-radius: 20px;
     border: 3px solid black;
     box-shadow: 5px 5px 7px rgba(0.3, 0, 0.6, 0); 
     margin-left: 15px;
@@ -44,7 +44,7 @@
   }
   
   .titles {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
   }
   
@@ -89,8 +89,7 @@
   
   #about {
     padding-top: 60px;
-    height: 880px;
-    
+    height: 785px;
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -99,12 +98,12 @@
     position: relative;
     justify-content: space-between;
   }
-  
+
   .about-text-1 {
     position: absolute;
-    padding: 345px 520px 40px 62px;
-    font-size: 20px;
-    line-height: 28px;
+    padding: 300px 490px 40px 30px;
+    font-size: 18px;
+    line-height: 24px;
     text-align: left;
   }
   
@@ -197,15 +196,15 @@
     border-radius: 30px;
     margin: 0px 30px 20px 0px;
     padding: 20px;
-    height: 315px;
+    height: 360px;
   }
   
   .faculty-headshot {
-    width: 300px;
-    height: 300px;
+    width: 310px;
+    height: 310px;
     border-radius: 50%;
     margin-right: 10px;
-    padding-top: 5px;
+    padding-top: 25px;
   }
   
   .details {
@@ -214,15 +213,16 @@
   }
   
   .ra-details {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 19px;
     font-weight: 600;
   }
   
   .ra-title {
-    font-size: 22px;
+    font-size: 17px;
     font-weight: 300;
     line-height: 24px;
+    vertical-align: middle;
   }
   
   .ra-headshot {
@@ -240,13 +240,14 @@
     margin: 0px 20px 20px 0px;
     display: flex;
     flex-direction: row;
+    font-size: 17px;
   }
   
   .med {
-    height: 315px;
+    height: 330px;
   }
   .long {
-    height: 355px;
+    height: 385px;
   }
   
   .row {

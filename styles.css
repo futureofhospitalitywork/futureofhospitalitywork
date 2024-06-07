@@ -12,7 +12,19 @@
     font-size: 128px;
     font-weight: 300;
   }
-  
+
+  button {
+    font-family: "League Spartan", sans-serif;
+    padding: 15px;
+    border-radius: 25px;
+    border: 3px solid black;
+    box-shadow: 5px 5px 7px rgba(0.3, 0, 0.6, 0); 
+    margin-left: 15px;
+    font-weight: 400;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
   p,
   h3,
   span {
@@ -139,6 +151,8 @@
   
   body {
     margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
   }
   
   .nav-bar {

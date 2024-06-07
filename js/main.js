@@ -76,3 +76,27 @@ loop();
 window.onresize = function(event) {
   loop();
 };
+
+function showDIS() {
+    var x = document.getElementById("dis-paper");
+    var y = document.getElementById("dis-button");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      y.innerHTML = "Hide Paper";
+    } else {
+      x.style.display = "none";
+      y.innerHTML = "View Paper";
+    }
+  }
+
+  function showCSCW() {
+    var x = document.getElementById("cscw-paper");
+    var y = document.getElementById("cscw-button");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      y.innerHTML = "Hide Paper";
+    } else {
+      x.style.display = "none";
+      y.innerHTML = "View Paper";
+    }
+  }

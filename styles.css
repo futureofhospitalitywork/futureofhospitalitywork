@@ -78,7 +78,7 @@
   #about {
     padding-top: 60px;
     height: 880px;
-    background-image: url("assets/images/about-bg.png");
+    background-image: url('../assets/images/about-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
   }

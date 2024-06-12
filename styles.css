@@ -58,19 +58,6 @@
     vertical-align: middle;
   }
   
-  .left-panel {
-    height: 100%;
-    width: 16%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: transparent;
-    overflow-x: hidden;
-    padding-top: 30px;
-    transition: 0.5s;
-  }
-  
   /*
   .header__logo {
     position: relative;
@@ -96,6 +83,7 @@
     height: 785px;
     background-size: cover;
     background-repeat: no-repeat;
+    background-image: url('about-bg.png');
   }
 
   .about-text {
@@ -432,7 +420,29 @@
     transform: translateY(calc(var(--replace-offset) * -1));
   }
 
-  @media (max-width: 1250px) {
+  .header__title {
+    flex: 1;
+    text-align: center;
+    color: black;
+    font-family: "League Gothic", sans-serif;
+    display: none;
+}
+
+.file {
+  width: 1070px;
+  height: 1000px;
+}
+
+.about-hook {
+  padding-left: 30px; 
+  display: none;
+  font-family: "League Gothic", sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 65px;
+}
+
+  @media screen and (max-width: 1250px) {
     .nav-bar a {
       font-size: 32px;
     }
@@ -440,5 +450,111 @@
     body {
       overflow-x: scroll;
     }
+
+  }
+
+  @media screen and (max-width: 700px) {
+    .header__logo {
+        display: none;
+    }
+
+    .header__title {
+        text-align: left; 
+        padding-left: 10px; 
+        display: block;
+        padding-top: 0;
+        top: 0;
+    }
+
+    .nav-bar {
+      padding-top: 45px;
+    }
+
+    .header__title img {
+      width: 130px;
+      height: 130px;
+      padding: 0;
+    }
+
+    .header {
+      position: absolute;
+    }
+
+    #about {
+      height: 870px;
+      padding-left: 0;
+    }
+
+    .about-hook {
+      padding-top: 85px;
+      display: flex;
+      margin-bottom: 10px;
+    }
+
+    .about-text {
+      padding-top: 0;
+      margin-top: 0;
+      width: 510px;
+    }
+
+    .section-dark {
+      padding-left: 30px;
+    }
+
+    .section-light {
+      padding-left: 30px;
+    }
+
+    .nav-bar {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    .nav-bar a {
+      padding: 15px;
+    }
+
+    .js-replace__item {
+      display: none;
+    }
+
+    .file {
+      width: 600px;
+    }
+
+    #funding {
+      height: 460px;
+    }
+
+    #about {
+      background-image: none;
+    }
+
+    .faculty-bio {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .names {
+      font-size: 40px;
+    }
+
+    .details {
+      font-size: 20px;
+    }
+
+    .titles {
+      font-size: 20px;
+    }
+
+    .ra-bios {
+      flex-direction: column;
+      text-align: center;
+    }
+
+}
+
+  @media (max-width: 500px) {
+
 
   }

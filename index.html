@@ -76,12 +76,23 @@
                         workload. We argue for the need to consider these facets of wellbeing through design across the
                         service landscape, particularly as HCI
                         attends to the impacts of AI and automation on frontline work.</p>
-                        <div class="button-div">
-                            <button id="dis-button" onclick="showDIS()">View Paper</button>
-                        </div>  
+                        
+                        <div class="file-buttons">
+                            <div class="button-div">
+                                <button class="view-button" id="dis-button" onclick="showDIS()">View Paper</button>
+                            </div>
+                            <a href="assets/work/DIS.pdf" download>
+                                <div class="button-div">
+                                    <button class="download-button">
+                                        <i class="fa-solid fa-download" style="color: #161616;"></i>&nbsp;Download Paper</button>
+                                </div>
+                            </a>
+                        </div>
+
                     <div class="pdf-viewer" id="dis-paper" style="display:none">
                         <embed class="file" src="assets/work/DIS.pdf" type="application/pdf">
                     </div>
+     
                 </div>
                 <br><br>
                 <div class="project" id="cscw">
@@ -102,12 +113,22 @@
                         practitioners to elicit worker participation at all stages of technology adoption, and offer
                         methods for centering workers, increasing transparency, and accounting for the context of use
                         through holistic implementation and training strategies.</p>
-                        <div class="button-div">
-                            <button id="cscw-button" onclick="showCSCW()">View Paper</button>
+
+                        <div class="file-buttons">
+                            <div class="button-div">
+                                <button class="view-button" id="cscw-button" onclick="showCSCW()">View Paper</button>
+                            </div>
+                            <a href="assets/work/CSCW.pdf" download>
+                                <div class="button-div">
+                                    <button class="download-button">
+                                        <i class="fa-solid fa-download" style="color: #161616;"></i>&nbsp;Download Paper</button>
+                                </div>
+                            </a>
                         </div>
                         <div class="pdf-viewer" id="cscw-paper" style="display:none">
-                        <embed class="file" src="assets/work/CSCW.pdf" type="application/pdf">
-                    </div>
+                            <embed class="file" src="assets/work/CSCW.pdf" type="application/pdf">
+                    
+                        </div>
                 </div>
                 <br><br>
             </div>
@@ -121,7 +142,7 @@
                         <h2 class="names">Jodi Forlizzi<span class="details"> | &nbsp; PI, NSF Future of Work in the Hospitality Industry</span></h2>
                         <span class="titles">Human-Computer Interaction Institute, Carnegie Mellon University
                         </span>
-                        <p>Jodi Forlizzi is the Herbert A. Simon Professor of Computer Science and Human-Computer Interaction in the School of Computer Science at Carnegie Mellon University. She is also the Associate Dean of Diversity, Equity, and Inclusion in the School of Computer Science. Jodi has advocated for design research in all forms, mentoring peers, colleagues, and students in its structure and execution, and today it is an important part of the HCI community. Jodi studies the ethical impacts of human interaction with AI systems in front-line service industries including healthcare and hospitality. She also develops methods and tools to ensure that product developers can mitigate ethical harms and bias during product development. Jodi is an ACM SIGCHI Fellow and recently received its Lifetime Research Award. She recently testified to the US Senate in an AI Innovation Briefing and collaborates closely with the AFL-CIO Tech Institute.
+                        <p class="bio-text">Jodi Forlizzi is the Herbert A. Simon Professor of Computer Science and Human-Computer Interaction in the School of Computer Science at Carnegie Mellon University. She is also the Associate Dean of Diversity, Equity, and Inclusion in the School of Computer Science. Jodi has advocated for design research in all forms, mentoring peers, colleagues, and students in its structure and execution, and today it is an important part of the HCI community. Jodi studies the ethical impacts of human interaction with AI systems in front-line service industries including healthcare and hospitality. She also develops methods and tools to ensure that product developers can mitigate ethical harms and bias during product development. Jodi is an ACM SIGCHI Fellow and recently received its Lifetime Research Award. She recently testified to the US Senate in an AI Innovation Briefing and collaborates closely with the AFL-CIO Tech Institute.
                         </p>
                     </div>
                 </div>
@@ -133,7 +154,7 @@
                         <span class="titles"><a href="https://unitehere.org/who-we-are/" target="_blank">UNITE HERE
                                 <i class="fa-solid fa-arrow-up-right-from-square" id="external-icon"></i>
                             </a></span>
-                        <p>Ben Begleiter is a Deputy Director in the Research Department of UNITE HERE where he leads the union’s program to prepare hospitality workers for a more technological future.</p>
+                        <p class="bio-text">Ben Begleiter is a Deputy Director in the Research Department of UNITE HERE where he leads the union’s program to prepare hospitality workers for a more technological future.</p>
                     </div>
                 </div>
                 <div class="faculty-bio" id="christine">
@@ -142,7 +163,7 @@
                     <div class="bio-content">
                         <h2 class="names">Christine Riordan<span class="details"> | &nbsp; Assistant Professor</span></h2>
                         <span class="titles">School of Labor and Employment Relations, University of Illinois at Urbana-Champaign</span>
-                        <p>Christine Riordan is an Assistant Professor at the School of Labor and Employment Relations (LER), University of Illinois at Urbana-Champaign. Christine has conducted research focusing on the implications of restructuring and outsourcing for work design and voice. Research in progress explores these topics in the nursing occupation; past work has focused on legal work in corporate law firms. She has co-authored multiple papers considering how outsourcing reshapes conflict, work relationships, and inequality. Christine holds a PhD in Management from the Institute for Work and Employment Research at the MIT Sloan School of Management.
+                        <p class="bio-text">Christine Riordan is an Assistant Professor at the School of Labor and Employment Relations (LER), University of Illinois at Urbana-Champaign. Christine has conducted research focusing on the implications of restructuring and outsourcing for work design and voice. Research in progress explores these topics in the nursing occupation; past work has focused on legal work in corporate law firms. She has co-authored multiple papers considering how outsourcing reshapes conflict, work relationships, and inequality. Christine holds a PhD in Management from the Institute for Work and Employment Research at the MIT Sloan School of Management.
                         </p>
                     </div>
                 </div>
@@ -152,7 +173,7 @@
                     <div class="bio-content">
                         <h2 class="names">Sarah Fox<span class="details"> | &nbsp; Assistant Professor</span></h2>
                         <span class="titles">Human-Computer Interaction Institute, Carnegie Mellon University</span>
-                        <p>Sarah Fox is an Assistant Professor at Carnegie Mellon University in the Human Computer
+                        <p class="bio-text">Sarah Fox is an Assistant Professor at Carnegie Mellon University in the Human Computer
                             Interaction Institute, where she directs the Tech Solidarity Lab. Her work examines the
                             impacts of AI and automation on essential work sectors, with a focus on developing systems
                             that center workers’ needs and expertise. She holds a Ph.D. in Human Centered Design &
@@ -166,7 +187,7 @@
                     <div class="bio-content">
                         <h2 class="names">Deborah Figart<span class="details"> | &nbsp; Distinguished Professor Emerita</span></h2>
                         <span class="titles">School of Social & Behavioral Sciences, Stockton University</span>
-                        <p>Dr. Deborah M. Figart is Distinguished Professor Emerita of Economics at Stockton University.
+                        <p class="bio-text">Dr. Deborah M. Figart is Distinguished Professor Emerita of Economics at Stockton University.
                             Her research focuses on labor economics. Dr. Figart is the author or editor of 22
                             books/monographs and over 100 other publications. Her latest books are Stories of
                             Progressive Institutional Change: Challenges to the Neoliberal Economy (Palgrave, 2017) and
@@ -181,7 +202,7 @@
                     <div class="bio-content">
                         <h2 class="names">Hye Jin Rho<span class="details"> | &nbsp; Assistant Professor</span></h2>
                         <span class="titles">School of Human Resources and Labor Relations, Michigan State University</span>
-                        <p> Hye Jin Rho is an Assistant Professor at the School of Human Resources and Labor Relations at Michigan State University. Her research focuses on the changing nature of work and organizations and its implications for employment processes and outcomes dictating the future of work. In particular, her work focuses on the rapid proliferation of new advanced technologies, increase in fractured employment relationships through outsourcing and hyper-subcontracting arrangements, and changing demand in skills and worker preferences for jobs. Her projects have received funding from National Science Foundation, Alfred P. Sloan Foundation, Russell Sage Foundation, as well as the Labor and Employment Relations Association (LERA). She holds a Ph.D. in Management from MIT Sloan School of Management with the Institute for Work and Employment Research.
+                        <p class="bio-text"> Hye Jin Rho is an Assistant Professor at the School of Human Resources and Labor Relations at Michigan State University. Her research focuses on the changing nature of work and organizations and its implications for employment processes and outcomes dictating the future of work. In particular, her work focuses on the rapid proliferation of new advanced technologies, increase in fractured employment relationships through outsourcing and hyper-subcontracting arrangements, and changing demand in skills and worker preferences for jobs. Her projects have received funding from National Science Foundation, Alfred P. Sloan Foundation, Russell Sage Foundation, as well as the Labor and Employment Relations Association (LERA). She holds a Ph.D. in Management from MIT Sloan School of Management with the Institute for Work and Employment Research.
                         </p>
                     </div>
                 </div>
@@ -191,7 +212,7 @@
                     <div class="bio-content">
                         <h2 class="names">Betsy Stringam<span class="details"> | &nbsp; Professor</span></h2>
                         <span class="titles">School of Hotel, Restaurant, and Tourism Management, New Mexico State University</span>
-                        <p>Betsy Stringam is a Professor at New Mexico State University's Hotel, Restaurant and Tourism Management program. She has worked in the hotel, resort, and restaurant industries before transitioning to academia in 2008. Stringam is an expert on Hotels and Resorts, having authored a book and multiple chapters in textbooks on the subject. She also regularly contributes to hospitality and tourism journals and serves on the Research Committee for the International Foundation for the American Resort & Development Association. Additionally, Stringam holds various professional certifications, including Registered Resort Professional and Certified Hospitality Educator.
+                        <p class="bio-text">Betsy Stringam is a Professor at New Mexico State University's Hotel, Restaurant and Tourism Management program. She has worked in the hotel, resort, and restaurant industries before transitioning to academia in 2008. Stringam is an expert on Hotels and Resorts, having authored a book and multiple chapters in textbooks on the subject. She also regularly contributes to hospitality and tourism journals and serves on the Research Committee for the International Foundation for the American Resort & Development Association. Additionally, Stringam holds various professional certifications, including Registered Resort Professional and Certified Hospitality Educator.
                         </p>
                     </div>
                 </div>
@@ -201,7 +222,7 @@
                     <div class="bio-content">
                         <h2 class="names">Ellen Mutari<span class="details"> | &nbsp; Professor Emerita</span></h2>
                         <span class="titles">School of Social & Behavioral Sciences, Stockton University</span>
-                        <p>Dr. Ellen Mutari is the Professor of Economics Emerita at Stockton University. Her current
+                        <p class="bio-text">Dr. Ellen Mutari is the Professor of Economics Emerita at Stockton University. Her current
                             research encompasses emerging perspectives on job quality and well-being, modern approaches
                             to teaching introductory economics, and the evolution of feminist political economy
                             theories. Dr. Mutari is the author or coauthor of 6 books including Just One More Hand, Life
@@ -218,7 +239,7 @@
                         <span class="titles"><a href="https://unitehere.org/who-we-are/" target="_blank">UNITE HERE, AFL-CIO
                             <i class="fa-solid fa-arrow-up-right-from-square" id="external-icon"></i>
                         </a></span>
-                        <p>Edward Wytkind is a decades-long labor movement leader and advocate with expertise in technology, transportation, the future of work, and labor and workplace issues such as worker protections, bargaining rights and safety and security. Ed is a senior advisor to the UNITE HERE and has assisted the union in building and executing its technology program. He is also a senior advisor on technology and the future of work to the national AFL-CIO and its Technology Institute and is assisting the Transport Workers Union in the development of a multi-faceted technology program. Prior to going out on his own in 2017 to consult on technology strategies, Ed was the president of the Transportation Trades Department, AFL-CIO (TTD), where for more than 25 years he led a diverse coalition of private and public sector transportation unions in developing and advancing their policy priorities in the aviation, transit, rail, highway, longshore, maritime, and other sectors.
+                        <p class="bio-text">Edward Wytkind is a decades-long labor movement leader and advocate with expertise in technology, transportation, the future of work, and labor and workplace issues such as worker protections, bargaining rights and safety and security. Ed is a senior advisor to the UNITE HERE and has assisted the union in building and executing its technology program. He is also a senior advisor on technology and the future of work to the national AFL-CIO and its Technology Institute and is assisting the Transport Workers Union in the development of a multi-faceted technology program. Prior to going out on his own in 2017 to consult on technology strategies, Ed was the president of the Transportation Trades Department, AFL-CIO (TTD), where for more than 25 years he led a diverse coalition of private and public sector transportation unions in developing and advancing their policy priorities in the aviation, transit, rail, highway, longshore, maritime, and other sectors.
                         </p>
                     </div>
                 </div>
@@ -316,20 +337,20 @@
             
                 </div>
             </div>
+            <div class="section section--bg section-dark left" id="contact">
+                <br>
+                <h2 class="mini-section">CONTACT</h2>
+                <p class="contact-info">If you are interested in our project or collaborating with our team, please
+                    <u>reach out!</u>
+                    <br><br><strong>futureofhospitalitywork@andrew.cmu.edu</strong>
+                </p>
+            </div>
         </div>
         <!--
         <div class="section section-light right" id="funding">
             <h2><span class="dot"></span> FUNDING <br>
                 ACKNOWLEDGEMENT</h2>
         </div>-->
-        <div class="section section--bg section-dark left" id="contact">
-            <br>
-            <h2 class="mini-section">CONTACT</h2>
-            <p class="contact-info">If you are interested in our project or collaborating with our team, please
-                <u>reach out!</u>
-                <br><br><strong>futureofhospitalitywork@andrew.cmu.edu</strong>
-            </p>
-        </div>
     </div>
     </div>
 </body>

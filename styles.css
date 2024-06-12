@@ -74,24 +74,8 @@
     vertical-align: middle;
   }
   
-  /*
-  .header__logo {
-    position: relative;
-    width: 200px;
-    height: 200px; 
-    overflow: hidden;
-  }
-  
-  .logo {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    margin-left: 10px;
-    transition: clip-path 0.1s ease;
-  }*/
-  
   #logo-dark {
-    opacity: 0; /* Initially hide the dark logo */
+    opacity: 0; 
   }
   
   #about {
@@ -100,6 +84,15 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url('about-bg.png');
+  }
+
+  .about-hook {
+    padding-left: 30px; 
+    display: none;
+    font-family: "League Gothic", sans-serif;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 65px; 
   }
 
   .about-text {
@@ -448,20 +441,14 @@
     display: none;
 }
 
+/*Embedded file viewer size*/
 .file {
   width: 1070px;
   height: 1000px;
 }
 
-.about-hook {
-  padding-left: 30px; 
-  display: none;
-  font-family: "League Gothic", sans-serif;
-  font-size: 72px;
-  font-weight: 400;
-  line-height: 65px; 
-}
 
+/*Page load animations*/
 header {
   transition: 1s;
 }
@@ -480,17 +467,20 @@ body {
   }
 }
 
+/*****MEDIA QUERIES FOR REDUCED WINDOW/SCREEN SIZES****/
   @media screen and (max-width: 1250px) {
     .nav-bar a {
       font-size: 32px;
     }
 
+    /*Allow horizontal scrolling in case of text overflow*/
     body {
       overflow-x: scroll;
     }
 
   }
 
+  /*Reorganize bio layouts to reduce whitespace*/
   @media screen and (max-width:1000px) {
     .faculty-bio {
       flex-direction: column;
@@ -516,11 +506,15 @@ body {
 
   }
 
+  /* Adjust layout for mobile devices */
   @media screen and (max-width: 700px) {
+
+    /* Hide parallax logo*/
     .header__logo {
         display: none;
     }
 
+    /*Display static logo*/
     .header__title {
         text-align: left; 
         padding-left: 10px; 
@@ -528,21 +522,26 @@ body {
         padding-top: 0;
         top: 0;
     }
-
-    .nav-bar {
-      padding-top: 45px;
-    }
-
     .header__title img {
       width: 130px;
       height: 130px;
       padding: 0;
     }
-
     .header {
       position: absolute;
     }
 
+    /*Reduce nav bar padding*/
+    .nav-bar {
+      padding-top: 45px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    .nav-bar a {
+      padding: 15px;
+    }
+
+    /*Reconfigure spacing for about section*/
     #about {
       height: 900px;
       padding-left: 0;
@@ -560,27 +559,23 @@ body {
       width: 510px;
     }
 
+    #about {
+      background-image: none;
+    }
+
+    /*Shift content to the left (remove empty space for logo scrolling)*/
     .section-dark {
       padding-left: 30px;
     }
-
     .section-light {
       padding-left: 30px;
-    }
-
-    .nav-bar {
-      padding-left: 0px;
-      padding-right: 0px;
-    }
-
-    .nav-bar a {
-      padding: 15px;
     }
 
     .js-replace__item {
       display: none;
     }
 
+    /*Adjust embedded file viewer side*/
     .file {
       width: 600px;
     }
@@ -589,22 +584,13 @@ body {
       height: 460px;
     }
 
-    #about {
-      background-image: none;
-    }
-
+    /*Replace PDF viewer (view button) with download function for mobile compatibility*/
     .view-button {
       display: none;
     }
-
     .download-button {
       display:block;
       margin-left: 15px;
     }
 
 }
-
-  @media (max-width: 500px) {
-
-
-  }

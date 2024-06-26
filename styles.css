@@ -9,7 +9,7 @@
     line-height: 110px;
     margin: 5px;
     padding: 10px;
-    font-size: 128px;
+    font-size: 108px;
     font-weight: 300;
   }
 
@@ -31,14 +31,18 @@
   }
 
   p,
-  h3,
-  span {
+  h3 {
     margin: 5px;
     padding: 10px;
     font-family: "League Spartan", sans-serif;
     line-height: 23px;
   }
   
+  span {
+    font-family: "League Spartan", sans-serif;
+    line-height: 23px;
+  }
+
   h4 {
     font-family: "League Spartan", sans-serif;
     padding: 0;
@@ -64,13 +68,10 @@
   .titles {
     font-size: 20px;
     font-weight: bold;
-    margin: 0;
-    padding: 0;
   }
   
   .years {
-    font-size: 32px;
-    font-style: italic;
+    font-size: 28px;
     vertical-align: middle;
   }
   
@@ -121,10 +122,48 @@
   
   #work {
     height: fit-content;
+    background-color: #f9eee1;
+    /* #f9ece5;*/
+    color: #222222;
   }
-  
+
+  #partners {
+    background-color: #f9eee1;
+    height: fit-content;
+  }
+
+  .uni-logo {
+    margin: 30px;
+    height: 100px;
+  }
+
+  #cmu, #nmsu {
+    width: 100px;
+  }
+
+  #mich-state, #stockton, #uiuc, #unite-here {
+    width: 0px;
+  }
+
   #funding {
-    height: 360px;
+    height: fit-content;
+    background-color: #f9eee1;
+    /* #f9ece5;*/
+    color: #222222;
+    align-items: right;
+    text-align: left;
+  }
+
+  #nsf-logo {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+  }
+
+  #block-center-logo {
+    width: 330px;
+    height: 110px;
+    margin: 20px;
   }
   
   .mini-section {
@@ -211,6 +250,8 @@
   .details {
     font-size: 22px;
     vertical-align: middle;
+    margin: 5px;
+    padding: 10px;
   }
   
   .ra-details {
@@ -224,6 +265,8 @@
     font-weight: 300;
     line-height: 24px;
     vertical-align: middle;
+      margin: 5px;
+      padding: 10px;
   }
   
   .ra-headshot {
@@ -246,8 +289,10 @@
   
   .row {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
-  }
+}
   
   .right {
     text-align: right;
@@ -273,8 +318,8 @@
   }
   
   .dot {
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
     background-color: #F57455;
     border-radius: 50%;
     display: inline-block;
@@ -294,8 +339,9 @@
   }
   
   .proj-names {
-    font-size: 56px;
-    line-height: 56px;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.5px;
   }
   
   .subhead {
@@ -310,11 +356,14 @@
   }
   
   .project {
-    border: 2px solid #ffffff;
+    border: 2px solid #222222;
     border-radius: 30px;
-    padding: 20px;
+    padding: 25px;
     padding-bottom: 30px;
-    text-align: left;
+    text-align: center;
+    margin: 20px;
+    width: 50%;
+    height: 300px;
   }
   
   .pdf-viewer {

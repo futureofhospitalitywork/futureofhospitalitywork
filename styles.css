@@ -71,7 +71,7 @@
   }
   
   .years {
-    font-size: 28px;
+    font-size: 24px;
     vertical-align: middle;
   }
   
@@ -121,10 +121,11 @@
   }
   
   #work {
-    height: fit-content;
+    height: 100%;
     background-color: #f9eee1;
     /* #f9ece5;*/
     color: #222222;
+    padding-right: 40px;
   }
 
   #partners {
@@ -133,16 +134,38 @@
   }
 
   .uni-logo {
-    margin: 30px;
-    height: 100px;
+    margin: 25px;
+    margin-top: 40px;
   }
 
-  #cmu, #nmsu {
+  #cmu-logo {
+    height: 100px;
     width: 100px;
   }
 
-  #mich-state, #stockton, #uiuc, #unite-here {
-    width: 0px;
+  #nmsu-logo {
+    height: 100px;
+    width: 90px;
+  }
+
+  #mich-state-logo {
+    height: 80px;
+    width: 130px;
+  }
+
+  #uiuc-logo {
+    height: 60px;
+    width: 220px;
+  }
+
+  #unite-here-logo {
+    height: 80px;
+    width: 140px;
+  }
+
+  #stockton-logo {
+    height: 80px;
+    width: 150px;
   }
 
   #funding {
@@ -155,14 +178,14 @@
   }
 
   #nsf-logo {
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     margin: 20px;
   }
 
   #block-center-logo {
-    width: 330px;
-    height: 110px;
+    width: 290px;
+    height: 95px;
     margin: 20px;
   }
   
@@ -199,13 +222,13 @@
   }
   
   .nav-bar a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 8px 22px;
     text-decoration: none;
     color: #222222;
     transition: 1s;
     font-family: "League Gothic", sans-serif;
     font-weight: 300;
-    font-size: 48px;
+    font-size: 38px;
   }
   
   .section-dark {
@@ -216,6 +239,7 @@
   
   .section-light {
     padding-left: 250px;
+    background-color: white;
   }
   
   .contact {

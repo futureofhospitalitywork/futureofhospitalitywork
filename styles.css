@@ -59,6 +59,8 @@
   .bio-text {
     margin-left: 0;
     padding-left: 0;
+    font-size: 18px;
+    line-height: 22px;
   }
 
   .download-button {
@@ -68,6 +70,7 @@
   .titles {
     font-size: 20px;
     font-weight: bold;
+    line-height: 22px;
   }
   
   .years {
@@ -80,11 +83,11 @@
   }
   
   #about {
-    padding-top: 60px;
+    /*padding-top: 60px;
     height: 785px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('about-bg.png');
+    background-image: url('about-bg.png');*/
   }
 
   .about-hook {
@@ -122,10 +125,10 @@
   
   #work {
     height: 100%;
-    background-color: #f9eee1;
     /* #f9ece5;*/
     color: #222222;
-    padding-right: 40px;
+    padding-right: 140px;
+    padding-left: 280px;
   }
 
   #team {
@@ -139,7 +142,7 @@
   }
 
   .uni-logo {
-    margin: 25px;
+    margin: 15px;
     margin-top: 40px;
   }
 
@@ -200,14 +203,23 @@
   }
   
   .funding-text {
-    font-size: 24px;
-    line-height: 30px;
-    width: 98%;
+    font-size: 22px;
+    line-height: 26px;
+    width: fit-content;
+    padding-left: 50px;
+    padding-right: 100px;
+    align-items: left;
   }
-  
+
   #contact {
     height: 350px;
-    
+  }
+
+  .overview-text {
+    padding-left: 50px;
+    padding-right: 80px;
+    font-size: 22px;
+    line-height: 26px;
   }
   
   .main-body {
@@ -239,12 +251,14 @@
   .section-dark {
     background-color: #222222;
     color: white;
-    padding-left: 250px;
+    padding-left: 270px;
+    padding-right: 40px;
   }
   
   .section-light {
-    padding-left: 250px;
+    padding-left: 270px;
     background-color: white;
+    padding-right: 40px;
   }
   
   .contact {
@@ -261,8 +275,8 @@
     flex-direction: row;
     border: 2px solid #222222;
     border-radius: 30px;
-    margin: 0px 30px 20px 0px;
-    padding: 20px 30px 20px 25px;
+    margin: 0px 85px 30px 40px;
+    padding: 20px 25px 20px 25px;
     height: 0%;
     min-height: 250px;
     font-size: 17px;
@@ -270,49 +284,40 @@
   }
   
   .faculty-headshot {
-    width: 230px;
-    height: 230px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     margin-right: 10px;
   }
   
   .details {
-    font-size: 22px;
+    font-size: 20px;
     vertical-align: middle;
     margin: 5px;
     padding: 10px;
   }
-  
-  .ra-details {
-    font-size: 18px;
-    line-height: 19px;
-    font-weight: 600;
+
+  .page-header {
+    padding-top: 80px;
+    padding-left: 40px;
   }
-  
-  .ra-title {
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 24px;
-    vertical-align: middle;
-      margin: 5px;
-      padding: 10px;
-  }
-  
+
   .ra-headshot {
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    padding-right: 10px;
+    margin-right: 25px;
   }
   
   .ra-bios {
     border: 2px solid #222222;
     border-radius: 30px;
-    padding: 20px 30px 30px 25px;
-    margin: 0px 30px 20px 0px;
+    padding: 20px 25px 20px 25px;
+    margin: 0px 85px 30px 40px;
     display: flex;
     flex-direction: row;
-    font-size: 17px;
+    font-size: 18px;
+    line-height: 22px;
     align-items: center;
   }
   
@@ -363,14 +368,16 @@
   }
   
   .ra-names {
-    font-size: 36px;
-    line-height: 28px;
+    font-size: 45px;
+    line-height: 30px;
   }
   
   .proj-names {
     font-size: 36px;
     line-height: 40px;
     letter-spacing: 0.5px;
+    padding-left: 0;
+    margin-left: 0;
   }
   
   .subhead {
@@ -383,16 +390,17 @@
   .contact-info {
     font-size: 24px;
   }
+
+  .proj-desc {
+    font-size: 20px;
+    line-height: 24px;
+  }
   
   .project {
-    border: 2px solid #222222;
-    border-radius: 30px;
-    padding: 25px;
-    padding-bottom: 30px;
-    text-align: center;
+    padding-left: 25px;
+    padding-bottom: 25px;
     margin: 20px;
-    width: 50%;
-    height: 300px;
+    text-align: left;
   }
   
   .pdf-viewer {
@@ -641,11 +649,7 @@ body {
       background-image: none;
     }
 
-    /*Shift content to the left (remove empty space for logo scrolling)*/
-    .section-dark {
-      padding-left: 30px;
-    }
-    .section-light {
+    .section {
       padding-left: 30px;
     }
 

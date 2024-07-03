@@ -63,10 +63,6 @@
     line-height: 22px;
   }
 
-  .download-button {
-    display:none;
-  }
-
   .titles {
     font-size: 20px;
     font-weight: bold;
@@ -82,47 +78,6 @@
     opacity: 0; 
   }
   
-  #about {
-    /*padding-top: 60px;
-    height: 785px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url('about-bg.png');*/
-  }
-
-  .about-hook {
-    padding-left: 30px; 
-    display: none;
-    font-family: "League Gothic", sans-serif;
-    font-size: 72px;
-    font-weight: 400;
-    line-height: 65px; 
-  }
-
-  .about-text {
-    position: absolute;
-    padding: 285px 0px 40px 30px;
-    font-size: 2.05vh;
-    line-height: 24px;
-    text-align: left;
-    width: 640px;
-    
-  }
-  
-  .about-text-2 {
-    position: absolute;
-    padding: 0px 540px 40px 62px;
-    font-size: 20px;
-    line-height: 28px;
-    text-align: left;
-  }
-  
-  .accent-bars {
-    width: 74%;
-    height: 50%;
-    padding-left: 15px;
-  }
-  
   #work {
     height: 100%;
     /* #f9ece5;*/
@@ -136,14 +91,14 @@
     padding-left: 280px;
   }
 
-  #partners {
-    background-color: #f9eee1;
-    height: fit-content;
+  .uni-logo {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 30px;
   }
 
-  .uni-logo {
-    margin: 15px;
-    margin-top: 40px;
+  #unis-row {
+    width: 80%;
   }
 
   #cmu-logo {
@@ -178,11 +133,12 @@
 
   #funding {
     height: fit-content;
-    background-color: #f9eee1;
+    background-color: #f9e8e1;
     /* #f9ece5;*/
     color: #222222;
     align-items: right;
     text-align: left;
+    display: flex;
   }
 
   #nsf-logo {
@@ -203,23 +159,27 @@
   }
   
   .funding-text {
-    font-size: 22px;
-    line-height: 26px;
-    width: fit-content;
+    font-size: 1.25em;
+    line-height: 1.15em;
+    width: 75%;
     padding-left: 50px;
-    padding-right: 100px;
+    padding-right: 50px;
     align-items: left;
-  }
-
-  #contact {
-    height: 350px;
   }
 
   .overview-text {
     padding-left: 50px;
-    padding-right: 80px;
-    font-size: 22px;
-    line-height: 26px;
+    padding-right: 50px;
+    width: 75%;
+    font-size: 1.25em;
+    line-height: 1.15em;
+  }
+
+  #partners {
+    background-color: #f9e8e1;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
   }
   
   .main-body {
@@ -261,11 +221,6 @@
     padding-right: 40px;
   }
   
-  .contact {
-    background-color: #222222;
-    color: white;
-  }
-  
   .ra-bio-content {
     line-height: 23px;
   }
@@ -299,7 +254,12 @@
 
   .page-header {
     padding-top: 80px;
-    padding-left: 40px;
+    padding-left: 45px;
+  }
+
+  #overview-header {
+    padding-bottom: 0;
+    line-height: 0.9em;
   }
 
   .ra-headshot {
@@ -381,10 +341,11 @@
   }
   
   .subhead {
-    text-align: center;
+    text-align: left;
     font-size: 56px;
     font-family: "League Gothic", sans-serif;
     font-weight: 300;
+    padding-left: 50px;
   }
   
   .contact-info {
@@ -407,30 +368,10 @@
     text-align: center;
   }
   
-  :root {
-    --black: #222222;
-    --white: #fff;
-    --color-1: #222222;
-    --gutter: 2rem;
-    --replace-offset: 100%;
-    --replace-offset-2: calc((100% - var(--replace-offset) ) * -1)
-  }
-  
   img {
     vertical-align: bottom;
   }
   
-  .container {
-    display: grid;
-    grid-template-rows: 1fr auto;
-    min-height: 100vh;
-  }
-  
-  .footer {
-    padding: calc(var(--gutter) * .5);
-    background-color: var(--black);
-    color: var(--white);
-  }
   
   .header {
     position: fixed;
@@ -442,20 +383,6 @@
     text-align: center;
     width: 250px;
   }
-  
-  .logo {
-    display: inline-block;
-    border-radius: calc(var(--gutter) * .25);
-    font-size: 2em;
-    padding: 10px;
-  }
-  
-  .logo--invert {
-    background-color: var(--black);
-    color: var(--white);
-    border-color: var(--white);
-  }
-  
   
   .header__logo {
     width: fit-content;
@@ -470,54 +397,6 @@
   .section--bg {
     background-color: var(--color-1);
   }
-  
-  .js-replace {
-    display: grid;
-  }
-  
-  .js-replace__item {
-    grid-row: -1 / 1;
-    grid-column: -1 / 1; 
-    overflow: hidden;
-    will-change: transform;
-  }
-  
-  .js-replace__item {
-    transform: translateY(calc(var(--replace-offset) * 1));  
-  }
-  .js-replace__content {
-    border: 1px solid transparent; 
-    will-change: transform;
-    transform: translateY(calc(var(--replace-offset) * -1));
-  }
-  
-  .js-replace__item--active {
-    transform: translateY(calc(var(--replace-offset-2) * 1));  
-  }
-  .js-replace__item--active .js-replace__content {
-    transform: translateY(calc(var(--replace-offset-2) * -1));  
-  }
-  
-  
-  /* REVERSE ANIMATION */
-  .js-replace--reverse 
-  .js-replace__item {
-    transform: translateY(calc(var(--replace-offset-2) * 1));  
-  }
-  .js-replace--reverse 
-  .js-replace__content {
-    transform: translateY(calc(var(--replace-offset-2) * -1));
-  }
-  
-  /* previous replace item*/
-  .js-replace--reverse 
-  .js-replace__item--active {
-    transform: translateY(calc(var(--replace-offset) * 1));  
-  }
-  .js-replace--reverse 
-  .js-replace__item--active .js-replace__content {
-    transform: translateY(calc(var(--replace-offset) * -1));
-  }
 
   .header__title {
     flex: 1;
@@ -526,13 +405,6 @@
     font-family: "League Gothic", sans-serif;
     display: none;
 }
-
-/*Embedded file viewer size*/
-.file {
-  width: 1070px;
-  height: 1000px;
-}
-
 
 /*Page load animations*/
 header {
@@ -560,9 +432,7 @@ body {
     }
 
     /*Allow horizontal scrolling in case of text overflow*/
-    body {
-      overflow-x: scroll;
-    }
+    
 
   }
 
@@ -571,6 +441,7 @@ body {
     .faculty-bio {
       flex-direction: column;
       text-align: center;
+      width: 80%;
     }
 
     .names {
@@ -588,12 +459,34 @@ body {
     .ra-bios {
       flex-direction: column;
       text-align: center;
+      width: 80%;
+    }
+
+    .overview-text {
+      width: 85%;
+    }
+    
+    .funding-text {
+      width: 85%;
+    }
+
+    #overview-header {
+      font-size: 85px;
+    }
+
+    .page-header {
+      font-size: 85px;
+    }
+
+    .dot {
+      height: 20px;
+      width: 20px;
     }
 
   }
 
   /* Adjust layout for mobile devices */
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 800px) {
 
     /* Hide parallax logo*/
     .header__logo {
@@ -629,8 +522,9 @@ body {
 
     /*Reconfigure spacing for about section*/
     #about {
-      height: 900px;
+      height: 1300px;
       padding-left: 0;
+      
     }
 
     .about-hook {
@@ -645,34 +539,62 @@ body {
       width: 510px;
     }
 
-    #about {
-      background-image: none;
-    }
-
     .section {
       padding-left: 30px;
     }
 
-    .js-replace__item {
-      display: none;
-    }
-
-    /*Adjust embedded file viewer side*/
-    .file {
-      width: 600px;
-    }
-
     #funding {
       height: 460px;
+      padding-left: 0;
     }
 
-    /*Replace PDF viewer (view button) with download function for mobile compatibility*/
-    .view-button {
-      display: none;
-    }
-    .download-button {
-      display:block;
-      margin-left: 15px;
+    #partners {
+      padding-left: 0;
     }
 
-}
+    .overview-text {
+      width: 90%;
+    }
+    
+    .funding-text {
+      width: 90%;
+    }
+
+    .uni-logo {
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    #overview-header {
+      font-size: 64px;
+    }
+
+    .page-header {
+      font-size: 64px;
+    }
+
+    .dot {
+      width: 15px;
+      height: 15px;
+    }
+
+  }
+
+     /* Adjust layout for mobile devices */
+  @media screen and (max-width: 800px) {
+
+    #about {
+      height: fit-content;
+    }
+
+    .nav-bar a {
+      font-size: 26px;
+      padding: 10px;
+    }
+  }
+
+
+
+   
+

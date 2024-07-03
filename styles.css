@@ -230,7 +230,7 @@
     flex-direction: row;
     border: 2px solid #222222;
     border-radius: 30px;
-    margin: 0px 85px 30px 40px;
+    margin: 0px 160px 30px 40px;
     padding: 20px 25px 20px 25px;
     height: 0%;
     min-height: 250px;
@@ -273,7 +273,7 @@
     border: 2px solid #222222;
     border-radius: 30px;
     padding: 20px 25px 20px 25px;
-    margin: 0px 85px 30px 40px;
+    margin: 0px 160px 30px 40px;
     display: flex;
     flex-direction: row;
     font-size: 18px;
@@ -377,7 +377,7 @@
     position: fixed;
     top: 14%;
     transform: translateY(-50%);
-    left: 0;
+    left: 1%;
     right: 0;
     padding: 12px;
     text-align: center;

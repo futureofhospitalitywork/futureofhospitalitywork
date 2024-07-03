@@ -101,6 +101,22 @@
     width: 80%;
   }
 
+  .logos-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 2px; 
+    width: 80%;
+    align-items: center;
+    flex-direction: row;
+}
+
+.logos-container img {
+    max-width: 100%; 
+    height: auto; 
+    margin-bottom: 10px; 
+}
+
   #cmu-logo {
     height: 100px;
     width: 100px;
@@ -191,6 +207,21 @@
     max-width: 100%;
     overflow-x: hidden;
   }
+
+  /* Hamburger Menu Icon */
+.menu-toggle {
+  display: none; /* Hide by default */
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #333;
+  transition: background-color 0.3s ease;
+}
   
   .nav-bar {
     float: right;
@@ -425,14 +456,25 @@ body {
   }
 }
 
+.header__logo .mobile-logo {
+  display: none;
+}
+
+
 /*****MEDIA QUERIES FOR REDUCED WINDOW/SCREEN SIZES****/
-  @media screen and (max-width: 1250px) {
+
+@media screen and (max-width: 1250px) {
     .nav-bar a {
       font-size: 32px;
     }
 
-    /*Allow horizontal scrolling in case of text overflow*/
-    
+    .logos-container {
+      width: 95%;
+    }
+
+    #overview-header {
+      font-size:72px;
+    }
 
   }
 
@@ -471,7 +513,7 @@ body {
     }
 
     #overview-header {
-      font-size: 85px;
+      font-size: 72px;
     }
 
     .page-header {
@@ -482,6 +524,13 @@ body {
       height: 20px;
       width: 20px;
     }
+
+    .nav-bar a {
+      font-size: 28px;
+      padding: 12px;
+    }
+
+
 
   }
 
@@ -516,9 +565,7 @@ body {
       padding-left: 0px;
       padding-right: 0px;
     }
-    .nav-bar a {
-      padding: 15px;
-    }
+   
 
     /*Reconfigure spacing for about section*/
     #about {
@@ -560,14 +607,8 @@ body {
       width: 90%;
     }
 
-    .uni-logo {
-      margin-top: 10px;
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-
     #overview-header {
-      font-size: 64px;
+      font-size: 56px;
     }
 
     .page-header {
@@ -588,11 +629,66 @@ body {
       height: fit-content;
     }
 
+    /*
     .nav-bar a {
       font-size: 26px;
       padding: 10px;
-    }
+    }*/
+
+    .nav-bar {
+      display: none;
+      width: 100px;
+      height: 240px;
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      right: 0;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      margin-right: 20px;
   }
+
+  .nav-bar a {
+      margin: 10px 0;
+      padding: 0;
+      padding-right: 10px;
+      text-decoration: none;
+      color: #333;
+      font-size: 24px;
+      
+  }
+
+  .menu-toggle {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 1500;
+  }
+
+  /* Toggle animation for hamburger icon */
+  .menu-toggle.active .bar:nth-child(1) {
+      transform: translateY(6px) rotate(45deg);
+  }
+  .menu-toggle.active .bar:nth-child(2) {
+      opacity: 0;
+  }
+  .menu-toggle.active .bar:nth-child(3) {
+      transform: translateY(-6px) rotate(-45deg);
+  }
+
+  .header__logo .mobile-logo {
+    display: flex;
+}
+
+
+
+  }
+
+   
 
 
 

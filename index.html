@@ -19,6 +19,7 @@
         rel="stylesheet">
 
     <!--Scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/main.js"></script>
 
     <!--Page Title & Favicon-->
@@ -32,11 +33,19 @@
             <!--Logo Variants (for parallax transition)-->
             <div class="header__logo">
                 <a href="https://futureofhospitalitywork.github.io/futureofhospitalitywork/">
-                    <div class="logo"><img class="logo-img" src="assets/images/logo1.png" alt="Future of Hospitality Work Logo"></div>
+                    <div class="logo original-logo"><img class="logo-img" src="assets/images/logo1.png" alt="Future of Hospitality Work Logo"></div>
+                    <div class="logo mobile-logo"><img class="logo-img" src="assets/images/logo2.png" alt="Mobile Logo"></div>
                 </a>
             </div>
         </header>
         <div class="main-body">
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
             <!--Navigation Bar-->
             <div class="nav-bar">
                 <a href="index.html">OVERVIEW</a>
@@ -117,12 +126,10 @@
                         engage workers in the innovation process, by getting their input on critical challenges
                         impacting the adoption of AI and opening new pathways for industry collaboration. </span>
                 </div>
-                    <div class="row" id="unis-row">
+                    <div class="logos-container">
                         <img class="uni-logo" id="cmu-logo" alt="CMU Logo" src="assets/images/uni-logos/cmu.png">
                         <img class="uni-logo" id="mich-state-logo" alt="Michigan State Logo" src="assets/images/uni-logos/mich-state.png">
                         <img class="uni-logo" id="nmsu-logo" alt="NMSU Logo" src="assets/images/uni-logos/nmsu.png">
-                    </div>
-                    <div class="row" id="unis-row">
                         <img class="uni-logo" id="stockton-logo" alt="Stockton Logo" src="assets/images/uni-logos/stockton.png">
                         <img class="uni-logo" id="uiuc-logo" alt="UIUC Logo" src="assets/images/uni-logos/uiuc.png">
                         <img class="uni-logo" id="unite-here-logo" alt="UNITE HERE Logo" src="assets/images/uni-logos/unitehere.png">
@@ -141,7 +148,7 @@
                         grant from NSF, one of the 10 Big Ideas for Future NSF Investments.
                         It includes funding from NSF 2128954, NSF 2208835, and CMU's Block Center.</span>
 
-                    <div class="row">
+                    <div class="logos-container">
                         <img class="funding-logo" id="nsf-logo" alt="NSF Logo" src="assets/images/funding-logos/nsf.png">
                         <img class="funding-logo" id="block-center-logo" alt="Block Center Logo"
                             src="assets/images/funding-logos/block-center.png">

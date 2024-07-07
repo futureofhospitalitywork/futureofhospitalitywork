@@ -13,23 +13,6 @@
     font-weight: 300;
   }
 
-  button {
-    font-family: "League Spartan", sans-serif;
-    padding: 10px 15px 10px 15px;
-    border-radius: 20px;
-    border: 3px solid black;
-    box-shadow: 5px 5px 7px rgba(0, 0, 0.6, 0.6); 
-    font-weight: 400;
-    font-size: 20px;
-    cursor: pointer;
-    color: black;
-  }
-
-  .button-div {
-    width:100%;
-    text-align: center;
-  }
-
   p,
   h2 {
     margin: 5px;
@@ -41,15 +24,6 @@
   span {
     font-family: "League Spartan", sans-serif;
     line-height: 23px;
-  }
-
-  h4 {
-    font-family: "League Spartan", sans-serif;
-    padding: 0;
-    margin: 0;
-    font-weight: 400;
-    padding-left: 15px;
-    padding-right: 5px;
   }
   
   .bio-content {
@@ -72,10 +46,6 @@
   .years {
     font-size: 24px;
     vertical-align: middle;
-  }
-  
-  #logo-dark {
-    opacity: 0; 
   }
   
   #work {
@@ -168,20 +138,6 @@
     height: 95px;
     margin: 20px;
   }
-  
-  .mini-section {
-    font-size: 82px;
-    line-height: 76px;
-  }
-  
-  .funding-text {
-    font-size: 1.25em;
-    line-height: 1.15em;
-    width: 75%;
-    padding-left: 50px;
-    padding-right: 50px;
-    align-items: left;
-  }
 
   .overview-text {
     padding-left: 50px;
@@ -239,17 +195,11 @@
     font-size: 38px;
   }
   
-  .section-dark {
-    background-color: #222222;
-    color: white;
-    padding-left: 270px;
-    padding-right: 40px;
-  }
-  
-  .section-light {
+  .section {
     padding-left: 270px;
     background-color: white;
     padding-right: 40px;
+    text-align: left;
   }
   
   .ra-bio-content {
@@ -319,15 +269,6 @@
     flex-direction: row;
 }
   
-  .right {
-    text-align: right;
-    padding-right: 40px;
-  }
-  
-  .left {
-    text-align: left;
-  }
-  
   a {
     text-decoration: none;
     color: #222222;
@@ -358,11 +299,6 @@
     margin-left: 0;
   }
   
-  .ra-names {
-    font-size: 45px;
-    line-height: 30px;
-  }
-  
   .proj-names {
     font-size: 36px;
     line-height: 40px;
@@ -377,10 +313,6 @@
     font-family: "League Gothic", sans-serif;
     font-weight: 300;
     padding-left: 50px;
-  }
-  
-  .contact-info {
-    font-size: 24px;
   }
 
   .proj-desc {
@@ -420,18 +352,6 @@
     width: 250px;
     height: 250px;
   }
-  
-  .section--bg {
-    background-color: var(--color-1);
-  }
-
-  .header__title {
-    flex: 1;
-    text-align: center;
-    color: black;
-    font-family: "League Gothic", sans-serif;
-    display: none;
-}
 
 /*Page load animations*/
 header {
@@ -538,7 +458,7 @@ body {
         display: none;
     }
 
-    .header {
+    .header__logo {
       top: 65px;
       left: 30px;
       position: absolute;
@@ -646,12 +566,6 @@ body {
     #about {
       height: fit-content;
     }
-
-    /*
-    .nav-bar a {
-      font-size: 26px;
-      padding: 10px;
-    }*/
 
     .nav-bar {
       display: none;

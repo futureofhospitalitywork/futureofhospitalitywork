@@ -326,6 +326,7 @@
     padding-bottom: 25px;
     margin: 5px;
     text-align: left;
+    overflow-wrap:break-word;
   }
   
   .pdf-viewer {

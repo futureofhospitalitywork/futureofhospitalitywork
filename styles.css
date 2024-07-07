@@ -235,7 +235,8 @@
 
   .page-header {
     padding-top: 80px;
-    padding-left: 45px;
+    padding-left: 47px;
+    white-space: nowrap;
   }
 
   #overview-header {
@@ -321,9 +322,9 @@
   }
   
   .project {
-    padding-left: 25px;
+    padding-left: 50px;
     padding-bottom: 25px;
-    margin: 20px;
+    margin: 5px;
     text-align: left;
   }
   

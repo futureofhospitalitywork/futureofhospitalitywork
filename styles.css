@@ -532,7 +532,7 @@
       }
 
       #goal-text {
-        padding-left: 30px;
+        padding-left:0;
       }
 
       .vertical-line {

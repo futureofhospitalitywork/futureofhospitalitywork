@@ -504,9 +504,9 @@
       }
   
       #overview-header {
-        font-size: 56px;
-        padding-top: 120px;
-        text-wrap:balance;
+        font-size: 50px;
+        padding-top: 100px;
+        text-wrap:wrap;
       }
       
       .overview-text {

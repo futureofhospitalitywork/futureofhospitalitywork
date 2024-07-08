@@ -505,7 +505,12 @@
   
       #overview-header {
         font-size: 56px;
-        padding-top: 120px
+        padding-top: 120px;
+        text-wrap:balance;
+      }
+      
+      .overview-text {
+        text-align: left;
       }
   
       .page-header {

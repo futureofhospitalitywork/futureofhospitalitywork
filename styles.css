@@ -1,631 +1,592 @@
-.container {
-    color: #222222;
-    width: 100%;
-    font-size: 18px;
-  }
-  
-  h1, h3 {
-    font-family: "League Gothic", sans-serif;
-    line-height: 110px;
-    margin: 5px;
-    padding: 10px;
-    font-size: 100px;
-    font-weight: 300;
-  }
 
-  p,
-  h2 {
-    margin: 5px;
-    padding: 10px;
-    font-family: "League Spartan", sans-serif;
-    line-height: 23px;
-  }
-  
-  span {
-    font-family: "League Spartan", sans-serif;
-    line-height: 23px;
-  }
-  
-  .bio-content {
-    margin-left: 15px;
-  }
-
-  .bio-text {
-    margin-left: 0;
-    padding-left: 0;
-    font-size: 18px;
-    line-height: 22px;
-  }
-
-  .titles {
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 22px;
-  }
-  
-  .years {
-    font-size: 24px;
-    vertical-align: middle;
-  }
-  
-  #work {
-    height: 100%;
-    /* #f9ece5;*/
-    color: #222222;
-    padding-right: 140px;
-    padding-left: 280px;
-  }
-
-  #team {
-    padding-right: 40px;
-    padding-left: 280px;
-  }
-
-  .uni-logo {
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-top: 30px;
-  }
-
-  #unis-row {
-    width: 80%;
-  }
-
-  .logos-container {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; 
-    gap: 2px; 
-    width: 80%;
-    align-items: center;
-    flex-direction: row;
-}
-
-.logos-container img {
-    max-width: 100%; 
-    height: auto; 
-    margin-bottom: 10px; 
-}
-
-  #cmu-logo {
-    height: 100px;
-    width: 100px;
-  }
-
-  #nmsu-logo {
-    height: 100px;
-    width: 90px;
-  }
-
-  #mich-state-logo {
-    height: 93px;
-    width: 140px;
-  }
-
-  #uiuc-logo {
-    height: 60px;
-    width: 220px;
-  }
-
-  #unite-here-logo {
-    height: 80px;
-    width: 140px;
-  }
-
-  #stockton-logo {
-    height: 80px;
-    width: 155px;
-  }
-
-  #funding {
-    height: fit-content;
-    background-color: #f9e8e1;
-    /* #f9ece5;*/
-    color: #222222;
-    align-items: right;
-    text-align: left;
-    display: flex;
-  }
-
-  #nsf-logo {
-    width: 130px;
-    height: 130px;
-    margin: 20px;
-  }
-
-  #block-center-logo {
-    width: 290px;
-    height: 95px;
-    margin: 20px;
-  }
-
-  .overview-text {
-    padding-left: 50px;
-    padding-right: 50px;
-    width: 75%;
-    font-size: 1.25em;
-    line-height: 1.15em;
-  }
-
-  #partners {
-    background-color: #f9e8e1;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .main-body {
-    height: 100%;
-  }
-  
-  body {
-    margin: 0;
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-
-  /* Hamburger Menu Icon */
-.menu-toggle {
-  display: none; /* Hide by default */
-  cursor: pointer;
-}
-
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  background-color: #333;
-  transition: background-color 0.3s ease;
-}
-  
-  .nav-bar {
-    float: right;
-    height: 40px;
-    padding: 25px 50px 0px 0px;
-  }
-  
-  .nav-bar a {
-    padding: 8px 8px 8px 22px;
-    text-decoration: none;
-    color: #222222;
-    transition: 1s;
-    font-family: "League Gothic", sans-serif;
-    font-weight: 300;
-    font-size: 38px;
-  }
-  
-  .section {
-    padding-left: 270px;
-    background-color: white;
-    padding-right: 40px;
-    text-align: left;
-  }
-  
-  .ra-bio-content {
-    line-height: 23px;
-  }
-  
-  .faculty-bio {
-    display: flex;
-    flex-direction: row;
-    border: 2px solid #222222;
-    border-radius: 30px;
-    margin: 0px 160px 30px 40px;
-    padding: 20px 25px 20px 25px;
-    height: 0%;
-    min-height: 250px;
-    font-size: 17px;
-    align-items: center;
-  }
-  
-  .faculty-headshot {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-  
-  .details {
-    font-size: 20px;
-    vertical-align: middle;
-    margin: 5px;
-    padding: 10px;
-  }
-
-  .page-header {
-    padding-top: 80px;
-    padding-left: 47px;
-    white-space: nowrap;
-  }
-
-  #overview-header {
-    padding-bottom: 0;
-    line-height: 0.9em;
-  }
-
-  .ra-headshot {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    margin-right: 25px;
-  }
-  
-  .ra-bios {
-    border: 2px solid #222222;
-    border-radius: 30px;
-    padding: 20px 25px 20px 25px;
-    margin: 0px 160px 30px 40px;
-    display: flex;
-    flex-direction: row;
-    font-size: 18px;
-    line-height: 22px;
-    align-items: center;
-  }
-  
-  .row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-}
-  
-  a {
-    text-decoration: none;
-    color: #222222;
-  }
-  
-  a:visited {
-    color: #222222;
-  }
-  
-  #external-icon {
-    color: #222222;
-    font-size: 16px;
-  }
-  
-  .dot {
-    height: 25px;
-    width: 25px;
-    background-color: #F57455;
-    border-radius: 50%;
-    display: inline-block;
-    vertical-align: middle;
-  }
-  
-  .names {
-    font-size: 45px;
-    line-height: 30px;
-    padding-left: 0;
-    margin-left: 0;
-  }
-  
-  .proj-names {
-    font-size: 36px;
-    line-height: 40px;
-    letter-spacing: 0.5px;
-    padding-left: 0;
-    margin-left: 0;
-  }
-  
-  .subhead {
-    text-align: left;
-    font-size: 56px;
-    font-family: "League Gothic", sans-serif;
-    font-weight: 300;
-    padding-left: 50px;
-  }
-
-  .proj-desc {
-    font-size: 20px;
-    line-height: 24px;
-  }
-  
-  .project {
-    padding-left: 50px;
-    padding-bottom: 25px;
-    margin: 5px;
-    text-align: left;
-    overflow-wrap:break-word;
-  }
-  
-  .pdf-viewer {
-    text-align: center;
-  }
-  
-  img {
-    vertical-align: bottom;
-  }
-  
-  .header__logo {
-    width: fit-content;
-    height: fit-content;
-    position: fixed;
-    top: 14%;
-    transform: translateY(-50%);
-    left: 1%;
-    right: 0;
-    padding: 12px;
-    text-align: center;
-    width: 250px;
-  }
-  
-  .logo-img {
-    width: 250px;
-    height: 250px;
-  }
-
-/*Page load animations*/
-header {
-  transition: 1s;
-}
-
-body {
-  animation: fadeInAnimation ease 2s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-@keyframes fadeInAnimation {
-  0% {
-      opacity: 0;
-  }
-  100% {
-      opacity: 1;
-  }
-}
-
-.header__logo #mobile-logo {
-  display:none;
-}
-
-
-/*****MEDIA QUERIES FOR REDUCED WINDOW/SCREEN SIZES****/
-
-@media screen and (max-width: 1250px) {
-    .nav-bar a {
-      font-size: 32px;
+    .container {
+      color: #222;
+      width: 100%;
+      font-size: 18px
     }
-
-    .logos-container {
-      width: 95%;
+  
+    h1,
+    h3 {
+      font-family: "League Gothic", sans-serif;
+      line-height: 110px;
+      margin: 5px;
+      padding-bottom: 10px;
+      font-size: 100px;
+      font-weight: 300
     }
-
-    #overview-header {
-      font-size:72px;
+  
+    h2,
+    p {
+      margin: 5px;
+      padding: 10px;
+      font-family: "League Spartan", sans-serif;
+      line-height: 23px
     }
-
-  }
-
-  /*Reorganize bio layouts to reduce whitespace*/
-  @media screen and (max-width:1000px) {
-    .faculty-bio {
-      flex-direction: column;
-      text-align: center;
-      width: 80%;
+  
+    span {
+      font-family: "League Spartan", sans-serif;
+      line-height: 23px
     }
-
-    .names {
-      font-size: 40px;
+  
+    .bio-content {
+      margin-left: 15px
     }
-
-    .details {
-      font-size: 20px;
+  
+    .bio-text {
+      margin-left: 0;
+      padding-left: 0;
+      font-size: 18px;
+      line-height: 22px
     }
-
+  
     .titles {
       font-size: 20px;
+      font-weight: 700;
+      line-height: 22px
     }
-
-    .ra-bios {
-      flex-direction: column;
-      text-align: center;
-      width: 80%;
-    }
-
-    .overview-text {
-      width: 85%;
-    }
-    
-    .funding-text {
-      width: 85%;
-    }
-
-    #overview-header {
-      font-size: 72px;
-    }
-
-    .page-header {
-      font-size: 85px;
-    }
-
-    .dot {
-      height: 20px;
-      width: 20px;
-    }
-
-    .nav-bar a {
-      font-size: 28px;
-      padding: 12px;
-    }
-
-
-
-  }
-
-  /* Adjust layout for mobile devices */
-  @media screen and (max-width: 800px) {
-
-    /* Hide parallax logo*/
-    .header__logo #original-logo {
-        display: none;
-    }
-
-    .header__logo {
-      top: 65px;
-      left: 30px;
-      position: absolute;
-    }
-
-    .header__logo #mobile-logo {
-      display: flex;
-    }
-
-    #mobile-logo-img {
-      height: 60px;
-      width: 200px;
-    }
-
-    /*Reduce nav bar padding*/
-    .nav-bar {
-      padding-top: 45px;
-      padding-left: 0px;
-      padding-right: 0px;
-    }
-   
-    .page-header {
-      padding-top: 100px;
-      padding-bottom: 0;
-      margin-bottom: 0;
-    }
-
-    /*Reconfigure spacing for about section*/
-    #about {
-      height: 1300px;
-      padding-left: 0;
-      
-    }
-
-    #work {
-      padding-left:0;
-      padding-right:15px;
-    }
-
-    #team {
-      padding-left:0;
-      padding-right:15px;
-    }
-
-    .about-hook {
-      padding-top: 85px;
-      display: flex;
-      margin-bottom: 10px;
-    }
-
-    .about-text {
-      padding-top: 0;
-      margin-top: 0;
-      width: 510px;
-    }
-
-    .section {
-      padding-left: 30px;
-    }
-
-    #funding {
-      height: 460px;
-      padding-left: 0;
-    }
-
-    #partners {
-      padding-left: 0;
-    }
-
-    #press {
-      padding-left: 0;
-    }
-
-    #survey {
-      padding-left: 0;
-    }
-
-    .overview-text {
-      width: 90%;
-    }
-    
-    .funding-text {
-      width: 90%;
-    }
-
-    #overview-header {
-      font-size: 56px;
-      padding-top: 120px;
-    }
-
-    .page-header {
-      font-size: 64px;
-    }
-
-    .dot {
-      width: 15px;
-      height: 15px;
-    }
-
-  }
-
-     /* Adjust layout for mobile devices */
-  @media screen and (max-width: 800px) {
-
-    #about {
-      height: fit-content;
-    }
-
-    .nav-bar {
-      display: none;
-      width: 100px;
-      height: 240px;
-      flex-direction: column;
-      position: absolute;
-      top: 70px;
-      right: 0;
-      background-color: #fff;
-      border: 1px solid #ccc;
-      padding: 15px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      z-index: 1000;
-      margin-right: 20px;
-  }
-
-  .nav-bar a {
-      margin: 10px 0;
-      padding: 0;
-      padding-right: 10px;
-      text-decoration: none;
-      color: #333;
+  
+    .years {
       font-size: 24px;
-      
-  }
-
-  .slider {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 4px;
-    width: 0;
-    background-color: red;
-}
-
-  .menu-toggle {
+      vertical-align: middle
+    }
+  
+    #work {
+      height: 100%;
+      color: #222
+    }
+  
+    .uni-logo {
+      margin-left: 30px;
+      margin-right: 30px;
+      margin-top: 30px
+    }
+  
+    .logos-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2px;
+      align-items: center;
+      flex-direction: row
+    }
+  
+    .logos-container img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px
+    }
+  
+    #cmu-logo {
+      height: 100px;
+      width: 100px
+    }
+  
+    #nmsu-logo {
+      height: 100px;
+      width: 90px
+    }
+  
+    #mich-state-logo {
+      height: 93px;
+      width: 140px
+    }
+  
+    #uiuc-logo {
+      height: 60px;
+      width: 220px
+    }
+  
+    #unite-here-logo {
+      height: 80px;
+      width: 140px
+    }
+  
+    #stockton-logo {
+      height: 80px;
+      width: 155px
+    }
+  
+    #funding {
+      height: fit-content;
+      background-color: #f9e8e1;
+      color: #222;
+      align-items: right;
+      text-align: left;
+      display: flex
+    }
+  
+    #nsf-logo {
+      width: 130px;
+      height: 130px;
+      margin: 20px
+    }
+  
+    #block-center-logo {
+      width: 290px;
+      height: 95px;
+      margin: 20px
+    }
+  
+    .overview-text {
+      margin: 0;
+      padding: 0;
+      text-align: justify;
+      font-size: 1.25em;
+      line-height: 1.15em
+    }
+  
+    #partners {
+      background-color: #f9e8e1;
+      height: fit-content;
+      display: flex;
+      flex-direction: column
+    }
+  
+    .main-body {
+      height: 100%
+    }
+  
+    body {
+      margin: 0;
+      max-width: 100%;
+      overflow-x: hidden
+    }
+  
+    .menu-toggle {
+      display: none;
+      cursor: pointer
+    }
+  
+    .bar {
       display: block;
-      position: absolute;
-      top: 35px;
-      right: 35px;
-      z-index: 1500;
-  }
-
-  /* Toggle animation for hamburger icon */
-  .menu-toggle.active .bar:nth-child(1) {
-      transform: translateY(7.5px) rotate(45deg);
-  }
-  .menu-toggle.active .bar:nth-child(2) {
-      opacity: 0;
-  }
-  .menu-toggle.active .bar:nth-child(3) {
-      transform: translateY(-7.5px) rotate(-45deg);
-  }
-
-
-  }
-
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      background-color: #333;
+      transition: background-color .3s ease
+    }
+  
+    .nav-bar {
+      float: right;
+      height: 40px;
+      padding: 25px 50px 0 0
+    }
+  
+    .nav-bar a {
+      padding: 8px 8px 8px 22px;
+      text-decoration: none;
+      color: #222;
+      transition: 1s;
+      font-family: "League Gothic", sans-serif;
+      font-weight: 300;
+      font-size: 38px
+    }
+  
+    .section-content {
+      margin: auto;
+      max-width: 900px;
+      padding-left: 100px;
+      text-align: left
+    }
+  
+    .ra-bio-content {
+      line-height: 23px
+    }
+  
+    .faculty-bio {
+      display: flex;
+      flex-direction: row;
+      border: 2px solid #222;
+      border-radius: 30px;
+      margin-bottom: 30px;
+      padding: 30px 25px 20px 25px;
+      height: 0%;
+      min-height: 250px;
+      font-size: 17px;
+      align-items: center
+    }
+  
+    .faculty-headshot {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      margin-right: 10px
+    }
+  
+    .details {
+      font-size: 20px;
+      vertical-align: middle;
+      margin: 5px;
+      padding: 10px
+    }
+  
+    .page-header {
+      padding-top: 80px;
+      padding-left: 0;
+      margin-left: 0;
+      white-space: nowrap
+    }
+  
+    #overview-header {
+      padding-bottom: 10px;
+      line-height: .9em;
+      padding-left: 0;
+      margin-left: 0
+    }
+  
+    .ra-headshot {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      margin-right: 25px
+    }
+  
+    .ra-bios {
+      border: 2px solid #222;
+      border-radius: 30px;
+      padding: 30px 25px 20px 25px;
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: row;
+      font-size: 18px;
+      line-height: 22px;
+      align-items: center;
+      max-width: 95%
+    }
+  
+    a {
+      text-decoration: none;
+      color: #222
+    }
+  
+    a:visited {
+      color: #222
+    }
+  
+    #external-icon {
+      color: #222;
+      font-size: 16px
+    }
+  
+    .dot {
+      height: 25px;
+      width: 25px;
+      background-color: #f57455;
+      border-radius: 50%;
+      display: inline-block;
+      vertical-align: middle
+    }
+  
+    .names {
+      font-size: 45px;
+      line-height: 30px;
+      padding-left: 0;
+      margin-left: 0
+    }
+  
+    .proj-names {
+      font-size: 36px;
+      line-height: 40px;
+      letter-spacing: .5px;
+      padding-left: 0;
+      margin-left: 0
+    }
+  
+    .subhead {
+      text-align: left;
+      font-size: 56px;
+      font-family: "League Gothic", sans-serif;
+      font-weight: 300;
+      padding-left: 5px;
+      margin-left: 0
+    }
+  
+    .proj-desc {
+      font-size: 20px;
+      line-height: 24px
+    }
+  
+    .project {
+      padding-bottom: 25px;
+      margin: 5px;
+      text-align: left;
+      overflow-wrap: break-word
+    }
+  
+    .pdf-viewer {
+      text-align: center
+    }
+  
+    img {
+      vertical-align: bottom
+    }
+  
+    .header__logo {
+      width: fit-content;
+      height: fit-content;
+      position: fixed;
+      top: 14%;
+      transform: translateY(-50%);
+      left: 1%;
+      right: 0;
+      padding: 12px;
+      text-align: center;
+      width: 250px
+    }
+  
+    .logo-img {
+      width: 250px;
+      height: 250px
+    }
+  
+    header {
+      transition: 1s
+    }
+  
+    body {
+      animation: fadeInAnimation ease 2s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards
+    }
+  
+    @keyframes fadeInAnimation {
+      0% {
+        opacity: 0
+      }
+  
+      100% {
+        opacity: 1
+      }
+    }
+  
+    .header__logo #mobile-logo {
+      display: none
+    }
+  
+    @media screen and (max-width:1250px) {
+      .header__logo #original-logo {
+        display: none
+      }
+  
+      .header__logo {
+        top: 65px;
+        left: 30px;
+        position: absolute
+      }
+  
+      .header__logo #mobile-logo {
+        display: flex
+      }
+  
+      #mobile-logo-img {
+        height: 60px;
+        width: 200px
+      }
+  
+      .nav-bar a {
+        font-size: 32px
+      }
+  
+      .logos-container {
+        width: 95%
+      }
+  
+      #overview-header {
+        font-size: 72px
+      }
+  
+      .section-content {
+        padding-left: 0;
+        padding: 50px
+      }
+    }
+  
+    @media screen and (max-width:1000px) {
+      .faculty-bio {
+        flex-direction: column;
+        text-align: center;
+        max-width: 95%
+      }
+  
+      .names {
+        font-size: 40px
+      }
+  
+      .details {
+        font-size: 20px
+      }
+  
+      .titles {
+        font-size: 20px
+      }
+  
+      .ra-bios {
+        flex-direction: column;
+        text-align: center
+      }
+  
+      .funding-text {
+        width: 85%
+      }
+  
+      #overview-header {
+        font-size: 72px
+      }
+  
+      .page-header {
+        font-size: 85px
+      }
+  
+      .dot {
+        height: 20px;
+        width: 20px
+      }
+  
+      .nav-bar a {
+        font-size: 28px;
+        padding: 12px
+      }
+    }
+  
+    @media screen and (max-width:800px) {
+  
+      .faculty-bio,
+      .ra-bios {
+        margin: 25px
+      }
+  
+      .nav-bar {
+        padding-top: 45px;
+        padding-left: 0;
+        padding-right: 0
+      }
+  
+      .page-header {
+        padding-top: 100px;
+        padding-bottom: 0;
+        margin-bottom: 0
+      }
+  
+      #about {
+        height: 1300px;
+        padding-left: 0
+      }
+  
+      #team {
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0
+      }
+  
+      #work {
+        padding-left: 0
+      }
+  
+      #funding {
+        height: fit-content;
+        padding-left: 0
+      }
+  
+      #partners {
+        padding-left: 0
+      }
+  
+      #press {
+        padding-left: 0
+      }
+  
+      #survey {
+        padding-left: 0
+      }
+  
+      .funding-text {
+        width: 90%
+      }
+  
+      #overview-header {
+        font-size: 56px;
+        padding-top: 120px
+      }
+  
+      .page-header {
+        font-size: 64px;
+        padding-top: 60px
+      }
+  
+      .subhead {
+        padding: 0;
+        padding-top: 10px;
+        font-size: 42px
+      }
+  
+      .dot {
+        width: 15px;
+        height: 15px
+      }
+  
+      .section-content {
+        padding-left: 0;
+        padding: 30px
+      }
+    }
+  
+    @media screen and (max-width:800px) {
+  
+      .page-header,
+      .subhead {
+        padding-left: 30px
+      }
+  
+      .project {
+        padding-left: 30px
+      }
+  
+      #about {
+        height: fit-content
+      }
+  
+      .nav-bar {
+        display: none;
+        width: 100px;
+        height: 240px;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+        z-index: 1000;
+        margin-right: 20px
+      }
+  
+      .nav-bar a {
+        margin: 10px 0;
+        padding: 0;
+        padding-right: 10px;
+        text-decoration: none;
+        color: #333;
+        font-size: 24px
+      }
+  
+      .slider {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 4px;
+        width: 0;
+        background-color: red
+      }
+  
+      .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 35px;
+        right: 35px;
+        z-index: 1500
+      }
+    }
    
 
 

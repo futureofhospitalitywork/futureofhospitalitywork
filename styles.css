@@ -370,7 +370,7 @@
   
       .header__logo {
         top: 65px;
-        left: 30px;
+        left: 20px;
         position: absolute
       }
   
@@ -423,10 +423,6 @@
       .ra-bios {
         flex-direction: column;
         text-align: center
-      }
-  
-      .funding-text {
-        width: 85%
       }
   
       #overview-header {
@@ -499,14 +495,10 @@
         padding-left: 0
       }
   
-      .funding-text {
-        width: 90%
-      }
-  
       #overview-header {
-        font-size: 50px;
+        font-size: 56px;
         padding-top: 100px;
-        text-wrap:wrap;
+        text-wrap: balance;
       }
       
       .overview-text {
@@ -590,6 +582,13 @@
         top: 35px;
         right: 35px;
         z-index: 1500
+      }
+    }
+
+    @media screen and (max-width:500px) {
+      .overview-header {
+        max-width: 360px;
+        font-size: 50px;
       }
     }
    

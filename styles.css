@@ -641,6 +641,12 @@
         right: 35px;
         z-index: 1500
       }
+
+      .faculty-headshot, .ra-headshot {
+        height: 150px;
+        width: 150px;
+        padding-bottom: 10px;
+      }
     }
 
     @media screen and (max-width:500px) {
@@ -653,6 +659,16 @@
       #goal-text {
         font-size: 26px;
       }
+
+      .proj-names {
+        font-size: 32px;
+        line-height: 34px;
+      }
+
+      .years {
+        font-size: 20px;
+      }
+
     }
   
    

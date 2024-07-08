@@ -369,7 +369,7 @@
       }
   
       .header__logo {
-        top: 65px;
+        top: 58px;
         left: 20px;
         position: absolute
       }
@@ -586,9 +586,10 @@
     }
 
     @media screen and (max-width:500px) {
-      .overview-header {
-        max-width: 360px;
-        font-size: 50px;
+      #overview-header {
+        max-width: 350px;
+        font-size: 48px;
+        padding-top: 80px;
       }
     }
    

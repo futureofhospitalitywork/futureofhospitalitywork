@@ -59,63 +59,36 @@
       display: flex;
     }
 
-    .cover-img {
-      border: 1px solid #222;
-      border-radius: 50%;
-      width: 400px;
+    #wrap-text .cover-img {
+      width: 500px;
       height: 400px;
-      margin-left: 20px;
+      -webkit-shape-outside: margin-box;
+      shape-outside: margin-box;
+      float:right;
+      font-size: 0;
+      padding-left: 15px;
+      padding-bottom: 15px;
+     
     }
   
-    .uni-logo {
-      margin-left: 17px;
-      margin-right: 17px;
-      margin-top: 30px
+    .uni-logo-container {
+      height: 140px;
+      width: 140px;
     }
-  
+
     .logos-container {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 1px;
       align-items: center;
-      flex-direction: row
+      flex-direction: row;
+      margin-bottom: 15px;
     }
   
     .logos-container img {
       max-width: 100%;
       height: auto;
-      margin-bottom: 10px
-    }
-  
-    #cmu-logo {
-      height: 80px;
-      width: 80px
-    }
-  
-    #nmsu-logo {
-      height: 80px;
-      width: 72px
-    }
-  
-    #mich-state-logo {
-      height: 80px;
-      width: 120px
-    }
-  
-    #uiuc-logo {
-      height: 50px;
-      width: 175px
-    }
-  
-    #unite-here-logo {
-      height: 65px;
-      width: 110px
-    }
-  
-    #stockton-logo {
-      height: 65px;
-      width: 123px
     }
   
     #funding {
@@ -134,7 +107,7 @@
     }
   
     #block-center-logo {
-      width: 210px;
+      width: auto;
       height: 70px;
       margin: 20px
     }
@@ -143,7 +116,7 @@
       margin: 0;
       padding: 0;
       text-align: left;
-      font-size: 1.25em;
+      font-size: 1.2em;
       line-height: 1.35em
     }
   
@@ -159,7 +132,7 @@
       height: fit-content;
       display: flex;
       flex-direction: row;
-      font-size: 32px;
+      font-size: 26px;
     }
 
     .goal-mark {
@@ -175,7 +148,7 @@
 
     #overview-line {
       /*height: 415px;*/
-      height: 31rem;
+      height: 14rem;
     }
 
     #bios-line {
@@ -600,6 +573,7 @@
       #overview-line {
         display: none;
       }
+
   
       .row {
         display:flex;
@@ -609,11 +583,13 @@
         flex-direction: row;
       }
   
-      .cover-img {
-        margin-top: 20px;
-        padding-left: 0;
-        height: 300px;
-        width: 300px;
+      #wrap-text .cover-img {
+        height: 280px;
+        width: 350px;
+        padding: 0;
+        padding-bottom: 20px;
+        float: none;
+        
       }
 
     }
@@ -700,6 +676,14 @@
 
       .years {
         font-size: 20px;
+      }
+
+      #wrap-text .cover-img {
+        height: 200px;
+        width: 250px;
+        padding: 0;
+        padding-bottom: 20px;
+        float: none;
       }
 
     }

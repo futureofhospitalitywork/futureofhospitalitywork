@@ -148,7 +148,7 @@
 
     #overview-line {
       /*height: 415px;*/
-      height: 14rem;
+      height: auto;
     }
 
     #bios-line {
@@ -508,6 +508,8 @@
 
       #goal-text {
         padding-left:0;
+        margin-left: 30px;
+        margin-right: 10px;
       }
 
       .vertical-line {
@@ -570,9 +572,7 @@
         padding: 30px
       }
 
-      #overview-line {
-        display: none;
-      }
+      
 
   
       .row {

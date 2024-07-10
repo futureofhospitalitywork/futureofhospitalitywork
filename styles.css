@@ -588,7 +588,7 @@
         width: 350px;
         padding: 0;
         padding-bottom: 20px;
-        float: none;
+        
         
       }
 
@@ -658,6 +658,16 @@
       }
     }
 
+    @media screen and (max-width:600px) {
+      #wrap-text .cover-img {
+        height: auto;
+        width: 100%;
+        padding: 0;
+        padding-bottom: 20px;
+        float: none;
+      }
+    }
+
     @media screen and (max-width:500px) {
       #overview-header {
         max-width: 350px;
@@ -676,14 +686,6 @@
 
       .years {
         font-size: 20px;
-      }
-
-      #wrap-text .cover-img {
-        height: 200px;
-        width: 250px;
-        padding: 0;
-        padding-bottom: 20px;
-        float: none;
       }
 
     }

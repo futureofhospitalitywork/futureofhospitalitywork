@@ -202,8 +202,15 @@
       transition: 1s;
       font-family: "League Gothic", sans-serif;
       font-weight: 300;
-      font-size: 38px
+      font-size: 38px;
     }
+  
+  /* Active class for the selected nav item */
+  .nav-bar a.active {
+      text-decoration:underline;
+      text-decoration-thickness: 2.5px;
+      text-decoration-color: #f57455; /* Optional: Change text color or add other styles for active link */
+  }
   
     .section-content {
       margin: auto;
@@ -371,6 +378,8 @@
       animation-iteration-count: 1;
       animation-fill-mode: forwards
     }
+
+    
   
     @keyframes fadeInAnimation {
       0% {

@@ -32,7 +32,7 @@
       margin-left: 15px
     }
   
-    .bio-text {
+    .bio-text, .email {
       margin-left: 0;
       padding-left: 0;
       font-size: 18px;
@@ -452,10 +452,6 @@
         font-size: 72px
       }
   
-      .page-header {
-        font-size: 85px
-      }
-  
       .dot {
         height: 20px;
         width: 20px
@@ -483,9 +479,12 @@
       .page-header {
         padding-top: 100px;
         padding-bottom: 0;
-        margin-bottom: 0
+        margin-bottom: 0;
+        font-size: 72px;
+        padding-top: 60px;
+        padding-left: 30px;
       }
-  
+
       #about {
         height: 1300px;
         padding-left: 0
@@ -538,13 +537,10 @@
         text-align: left;
       }
   
-      .page-header {
-        font-size: 64px;
-        padding-top: 60px
-      }
   
       .subhead {
         padding: 0;
+        padding-left: 30px;
         padding-top: 10px;
         font-size: 42px;
       }
@@ -559,7 +555,7 @@
       }
   
       .section-content {
-        padding-left: 0;
+        padding-left: 30px;
         padding: 30px
       }
 
@@ -583,11 +579,6 @@
     }
   
     @media screen and (max-width:800px) {
-  
-      .page-header,
-      .subhead {
-        padding-left: 30px
-      }
   
       .project, .press {
         padding-left: 30px
@@ -636,10 +627,26 @@
 
     @media screen and (max-width:600px) {
 
+      #team .page-header {
+        text-align: center;
+        margin-left: 20px;
+        padding-left: 0;
+      }
+
+      #team .subhead {
+        text-align: center;
+        margin-left: 0px;
+        padding-left: 0px;
+        margin-right: 0px;
+        padding: 0;
+        margin-bottom: 20px;
+      }
+
       .faculty-headshot, .ra-headshot {
         height: 200px;
         width: 200px;
         margin-bottom: 10px;
+        margin-right: 0;
       }
 
       .faculty-bio,
@@ -651,9 +658,20 @@
 
       .faculty-bio {
         flex-direction: column;
-        text-align: center;
-        max-width: 95%;
+        max-width: 100%;
         align-items: center;
+        padding:0;
+        margin: 0;
+        text-align: center;
+      }
+
+      .bio-text {
+        text-align: justify;
+      }
+
+      .email {
+        text-align: center;
+        margin-bottom: 40px;
       }
   
       .names {

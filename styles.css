@@ -344,7 +344,8 @@
     }
   
     .project {
-      padding-bottom: 45px;
+      padding-top: 20px;
+      padding-bottom: 20px;
       margin: 5px;
       text-align: left;
       overflow-wrap: break-word

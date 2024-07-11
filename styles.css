@@ -248,7 +248,7 @@
       height: 180px;
       border-radius: 50%;
       margin-right: 10px;
-      border: 1px solid #222;
+      border: 2px solid #222;
     }
   
     .details {
@@ -277,7 +277,7 @@
       height: 180px;
       border-radius: 50%;
       margin-right: 25px;
-      border: 1px solid #222;
+      border: 2px solid #222;
     }
   
     .ra-bios {
@@ -439,30 +439,6 @@
     }
   
     @media screen and (max-width:1000px) {
-      .faculty-bio {
-        flex-direction: column;
-        text-align: center;
-        max-width: 95%;
-        align-items: center;
-      }
-  
-      .names {
-        font-size: 40px
-      }
-  
-      .details {
-        font-size: 20px
-      }
-  
-      .titles {
-        font-size: 20px
-      }
-  
-      .ra-bios {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-      }
   
       #overview-header {
         font-size: 72px
@@ -488,13 +464,7 @@
       .background--custom {
         display: none;
       }
-  
-      .faculty-bio,
-      .ra-bios {
-        margin: 25px;
-        margin-top: 0px;
-        
-      }
+
   
       .nav-bar {
         padding-top: 45px;
@@ -513,11 +483,7 @@
         padding-left: 0
       }
   
-      #team {
-        padding-left: 0;
-        padding-right: 0;
-        margin: 0
-      }
+      
 
       #goal {
         font-size: 26px;
@@ -589,9 +555,6 @@
         padding: 30px
       }
 
-      
-
-  
       .row {
         display:flex;
         flex-wrap: wrap;
@@ -659,14 +622,49 @@
         z-index: 1500
       }
 
+      
+    }
+
+    @media screen and (max-width:600px) {
+
       .faculty-headshot, .ra-headshot {
         height: 200px;
         width: 200px;
         margin-bottom: 10px;
       }
-    }
 
-    @media screen and (max-width:600px) {
+      .faculty-bio,
+      .ra-bios {
+        margin: 25px;
+        margin-top: 0px;
+        
+      }
+
+      .faculty-bio {
+        flex-direction: column;
+        text-align: center;
+        max-width: 95%;
+        align-items: center;
+      }
+  
+      .names {
+        font-size: 40px
+      }
+  
+      .details {
+        font-size: 20px
+      }
+  
+      .titles {
+        font-size: 20px
+      }
+  
+      .ra-bios {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+      }
+
       #wrap-text .cover-img {
         height: auto;
         width: 100%;

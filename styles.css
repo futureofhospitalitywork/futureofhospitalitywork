@@ -589,9 +589,10 @@
         padding-left: 30px
       }
   
-      .project {
+      .project, .press {
         padding-left: 30px
       }
+
   
       #about {
         height: fit-content

@@ -1,0 +1,4 @@
+Sitemap: https://futureofhospitalitywork.org/sitemap.xml
+
+User-agent: *
+Disallow:
